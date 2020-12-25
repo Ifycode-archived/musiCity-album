@@ -1,6 +1,7 @@
 <div>
   <ul>
     <li *ngFor="let track of albumInfo?.album.tracks">
+      <img src="{{track.trackPhoto}}" alt="Artist image">
       <div>
         <span class="track-number">{{track.trackNumber}}</span>
         <span class="track-name">{{track.trackName}}</span>
