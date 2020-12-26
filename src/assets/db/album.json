@@ -1,9 +1,9 @@
 {
   "id": 1,
-  "artist": "The Prependers",
+  "artist": "MusiCity",
   "album": {
-    "name": "Opacity Zero",
-    "releaseDate": "September 25, 2014",
+    "name": "Stay With Me",
+    "releaseDate": "December 25, 2020",
     "coverImage": "assets/opacity-zero.jpg",
     "tracks": [
       {"trackNumber": 1, "trackName": "Music City Anthem", "trackPhoto": "assets/album-photos/music-city-anthem.jpg", "trackLength": "2:53", "trackPrice": 0.85 },
