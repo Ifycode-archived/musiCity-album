@@ -4,7 +4,8 @@ import { RouterModule } from '@angular/router';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppComponent } from './app.component';
+import { AlbumAppComponent } from './album-app.component';
+
 import { ProductDescriptionComponent } from './product-description/product-description.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 
@@ -15,7 +16,8 @@ import { appRoutes } from './routes';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AlbumAppComponent,
+
     ProductDescriptionComponent,
     ProductPageComponent,
     ProductTracklistingComponent,
@@ -29,6 +31,6 @@ import { appRoutes } from './routes';
   providers: [
     ProductService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AlbumAppComponent]
 })
 export class AppModule { }
