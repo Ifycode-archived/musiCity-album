@@ -5,14 +5,14 @@ import { map } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class AlbumsService {
+export class AlbumListService {
 
-  private _albumsUrl = '../assets/db/albums.json';
+  private _albumListUrl = '../assets/db/albumlist.json';
 
   constructor(private _httpClient: HttpClient) { }
 
-  getAlbums() {
-    return this._httpClient.get(this._albumsUrl)
+  getAlbumList() {
+    return this._httpClient.get(this._albumListUrl)
     .pipe(map((response) => response));
   }
 }

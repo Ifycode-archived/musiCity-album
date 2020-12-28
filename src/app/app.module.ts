@@ -5,8 +5,8 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AlbumAppComponent } from './album-app.component';
-import { AlbumsListComponent } from './main/albums/albums-list.component';
-import { AlbumsService } from './main/service/albums.service';
+import { AlbumListComponent } from './main/albums/album-list.component';
+import { AlbumListService } from './main/service/album-list.service';
 import { AlbumThumbnailComponent } from './main/albums/album-thumbnail.component';
 
 import { ProductDescriptionComponent } from './product-description/product-description.component';
@@ -20,7 +20,7 @@ import { appRoutes } from './routes';
 @NgModule({
   declarations: [
     AlbumAppComponent,
-    AlbumsListComponent,
+    AlbumListComponent,
     AlbumThumbnailComponent,
 
     ProductDescriptionComponent,
@@ -34,7 +34,7 @@ import { appRoutes } from './routes';
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    AlbumsService,
+    AlbumListService,
 
     ProductService
   ],

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "albumName": "Eternal",
+    "thumbnailImage": "assets/album-photos/eternal.jpg"
+  },
+  {
+    "id": 2,
+    "albumName": "Stay With Me",
+    "thumbnailImage": "assets/album-photos/stay-with-me.jpg"
+  }
+]
