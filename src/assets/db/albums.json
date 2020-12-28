@@ -1,10 +1,12 @@
 [
   {
     "id": 1,
-    "albumName": "Stay With Me"
+    "albumName": "Eternal",
+    "coverImage": "assets/album-photos/eternal.jpg"
   },
   {
     "id": 2,
-    "albumName": "Home Sweet Home"
+    "albumName": "Stay With Me",
+    "coverImage": "assets/album-photos/stay-with-me.jpg"
   }
 ]
