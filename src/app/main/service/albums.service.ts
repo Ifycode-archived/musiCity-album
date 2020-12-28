@@ -11,7 +11,7 @@ export class AlbumsService {
 
   constructor(private _httpClient: HttpClient) { }
 
-  getProducts() {
+  getAlbums() {
     return this._httpClient.get(this._albumsUrl)
     .pipe(map((response) => response));
   }
