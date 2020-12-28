@@ -5,8 +5,8 @@ import { AlbumListService } from '../service/album-list.service';
   template: `
     <div>
       <h2>MusiCity Music Albums</h2>
-      <div>
-        <album-thumbnail *ngFor="let list of albumlist" [list]="list"></album-thumbnail>
+      <div *ngFor="let list of albumlist">
+        <album-thumbnail [list]="list"></album-thumbnail>
       <div>
     </div>
   `
@@ -16,7 +16,7 @@ export class AlbumListComponent implements OnInit {
   constructor(private _albumListService: AlbumListService) { }
 
   ngOnInit(): void {
-    this._albumListService.getAlbumList()
+    this._albumListService.getAlbumList(1)
     .subscribe(response => this.albumlist = response);
   }
 
