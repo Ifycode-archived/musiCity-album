@@ -15,27 +15,3 @@ export class AlbumDetailsComponent implements OnInit {
   }
 
 }
-
-
-
-
-
-
-
-
- /* ngOnInit() {
-    this.list = this. _albumDetailsService.getAlbumList(1);
-  }*/
-
-  /*
-  ngOnInit() {
-    this.albumlist = this. _albumDetailsService.getAlbumList()
-    .subscribe(response =>  response.find(list => console.log(list.id)));
-  }
-*/
-
-  /*
-  ngOnInit() {
-    this. _albumDetailsService.getAlbumList(1)
-    .subscribe(response => this.albumlist = response.find(list => console.log(list.id)));
-  }*/
