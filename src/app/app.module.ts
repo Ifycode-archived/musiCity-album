@@ -11,13 +11,6 @@ import { AlbumThumbnailComponent } from './main/albums/album-thumbnail.component
 import { AlbumDetailsComponent } from './main/albums/album-details/album-details.component';
 import { AlbumDetailsService } from './main/albums/specific/album-details.service';
 import { NavBarComponent } from './nav/navbar.component';
-
-import { ProductDescriptionComponent } from './product-description/product-description.component';
-import { ProductPageComponent } from './product-page/product-page.component';
-
-import { ProductService } from './product.service';
-import { ProductTracklistingComponent } from './product-tracklisting/product-tracklisting.component';
-import { ProductListComponent } from './product-list/product-list.component';
 import { appRoutes } from './routes';
 
 @NgModule({
@@ -26,12 +19,7 @@ import { appRoutes } from './routes';
     AlbumListComponent,
     AlbumThumbnailComponent,
     AlbumDetailsComponent,
-    NavBarComponent,
-
-    ProductDescriptionComponent,
-    ProductPageComponent,
-    ProductTracklistingComponent,
-    ProductListComponent
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +28,7 @@ import { appRoutes } from './routes';
   ],
   providers: [
     AlbumListService,
-    AlbumDetailsService,
-
-    ProductService
+    AlbumDetailsService
   ],
   bootstrap: [AlbumAppComponent]
 })

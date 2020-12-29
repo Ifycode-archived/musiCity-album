@@ -6,16 +6,9 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AlbumDetailsService {
-  //private _albumListUrl = '../assets/db/albumlist.json';
   private _albumUrl = '../assets/db/album.json';
 
   constructor(private _httpClient: HttpClient) { }
-
-  /*
-  getAlbumList(id: number) {
-    return this._httpClient.get(this._albumListUrl)
-    .pipe(map((response: any[]) => response.find(list => list.id === id)));
-  }*/
 
   getAlbum(id: number) {
     return this._httpClient.get(this._albumUrl)
