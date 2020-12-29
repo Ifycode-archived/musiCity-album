@@ -1,9 +1,12 @@
 import { Routes } from '@angular/router';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductPageComponent } from './product-page/product-page.component';
+import { AlbumListComponent } from './main/albums/album-list.component';
+import { AlbumDetailsComponent } from './main/albums/album-details/album-details.component';
+import { Error404Component } from './main/errors/404.component';
+import { AlbumRouteActivator } from './main/albums/album-details/album-router-activator.service';
 
 export const appRoutes: Routes = [
-  { path: 'products', component: ProductListComponent },
-  { path: 'product/:id', component: ProductPageComponent },
-  { path: '', redirectTo: '/products', pathMatch: 'full' }
+  { path: 'albums', component: AlbumListComponent },
+  { path: 'albums/:id', component: AlbumDetailsComponent, canActivate: [AlbumRouteActivator] },
+  { path: '404', component: Error404Component },
+  { path: '', redirectTo: '/albums', pathMatch: 'full' }
 ]

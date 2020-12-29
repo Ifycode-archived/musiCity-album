@@ -3,24 +3,18 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { AlbumContainer } from './album-container';
-import { Product } from './product';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
+export class AlbumDetailsService {
   private _albumUrl = '../assets/db/album.json';
-  private _productsUrl = '../assets/db/products.json';
 
   constructor(private _httpClient: HttpClient) { }
 
   getAlbum(id: number): Observable<AlbumContainer> {
     return this._httpClient.get(this._albumUrl)
-    .pipe(map((response) => <AlbumContainer>response));
+    .pipe(map((response: AlbumContainer[]) => response.find(list => list.id === id)));
   }
 
-  getProducts(): Observable<Product> {
-    return this._httpClient.get(this._productsUrl)
-    .pipe(map((response) => <Product>response));
-  }
 }

@@ -1,6 +1,7 @@
 import { Album } from "./album";
 
 export interface AlbumContainer {
-  album: Album[];
+  id: number;
   artist: string;
+  album: Album[];
 }

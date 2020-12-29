@@ -4,22 +4,25 @@ import { RouterModule } from '@angular/router';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppComponent } from './app.component';
-import { ProductDescriptionComponent } from './product-description/product-description.component';
-import { ProductPageComponent } from './product-page/product-page.component';
-
-import { ProductService } from './product.service';
-import { ProductTracklistingComponent } from './product-tracklisting/product-tracklisting.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { AlbumAppComponent } from './album-app.component';
+import { AlbumListComponent } from './main/albums/album-list.component';
+import { AlbumListService } from './main/common/album-list.service';
+import { AlbumThumbnailComponent } from './main/albums/album-thumbnail.component';
+import { AlbumDetailsComponent } from './main/albums/album-details/album-details.component';
+import { AlbumDetailsService } from './main/albums/specific/album-details.service';
+import { NavBarComponent } from './nav/navbar.component';
 import { appRoutes } from './routes';
+import { Error404Component } from './main/errors/404.component';
+import { AlbumRouteActivator } from './main/albums/album-details/album-router-activator.service';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ProductDescriptionComponent,
-    ProductPageComponent,
-    ProductTracklistingComponent,
-    ProductListComponent
+    AlbumAppComponent,
+    AlbumListComponent,
+    AlbumThumbnailComponent,
+    AlbumDetailsComponent,
+    NavBarComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
@@ -27,8 +30,10 @@ import { appRoutes } from './routes';
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    ProductService
+    AlbumListService,
+    AlbumDetailsService,
+    AlbumRouteActivator
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AlbumAppComponent]
 })
 export class AppModule { }
