@@ -10,6 +10,7 @@ import { AlbumListService } from './main/common/album-list.service';
 import { AlbumThumbnailComponent } from './main/albums/album-thumbnail.component';
 import { AlbumDetailsComponent } from './main/albums/album-details/album-details.component';
 import { AlbumDetailsService } from './main/albums/specific/album-details.service';
+import { NavBarComponent } from './nav/navbar.component';
 
 import { ProductDescriptionComponent } from './product-description/product-description.component';
 import { ProductPageComponent } from './product-page/product-page.component';
@@ -25,6 +26,7 @@ import { appRoutes } from './routes';
     AlbumListComponent,
     AlbumThumbnailComponent,
     AlbumDetailsComponent,
+    NavBarComponent,
 
     ProductDescriptionComponent,
     ProductPageComponent,
