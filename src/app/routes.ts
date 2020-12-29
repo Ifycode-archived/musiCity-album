@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
 import { AlbumListComponent } from './main/albums/album-list.component';
-import { ProductPageComponent } from './product-page/product-page.component';
+import { AlbumDetailsComponent } from './main/albums/album-details/album-details.component';
 
 export const appRoutes: Routes = [
   { path: 'albums', component: AlbumListComponent },
-  { path: 'product/:id', component: ProductPageComponent },
+  { path: 'albums/:id', component: AlbumDetailsComponent },
   { path: '', redirectTo: '/albums', pathMatch: 'full' }
 ]

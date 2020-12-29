@@ -6,13 +6,13 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AlbumListService {
-
   private _albumListUrl = '../assets/db/albumlist.json';
 
   constructor(private _httpClient: HttpClient) { }
 
-  getAlbumList(id: number) {
+  getAlbumList() {
     return this._httpClient.get(this._albumListUrl)
     .pipe(map((response) => response));
   }
+
 }

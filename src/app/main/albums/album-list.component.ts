@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AlbumListService } from '../service/album-list.service';
+import { AlbumListService } from '../common/album-list.service';
 
 @Component({
   template: `
@@ -16,7 +16,7 @@ export class AlbumListComponent implements OnInit {
   constructor(private _albumListService: AlbumListService) { }
 
   ngOnInit(): void {
-    this._albumListService.getAlbumList(1)
+    this._albumListService.getAlbumList()
     .subscribe(response => this.albumlist = response);
   }
 

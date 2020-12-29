@@ -6,8 +6,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AlbumAppComponent } from './album-app.component';
 import { AlbumListComponent } from './main/albums/album-list.component';
-import { AlbumListService } from './main/service/album-list.service';
+import { AlbumListService } from './main/common/album-list.service';
 import { AlbumThumbnailComponent } from './main/albums/album-thumbnail.component';
+import { AlbumDetailsComponent } from './main/albums/album-details/album-details.component';
+import { AlbumDetailsService } from './main/albums/specific/album-details.service';
 
 import { ProductDescriptionComponent } from './product-description/product-description.component';
 import { ProductPageComponent } from './product-page/product-page.component';
@@ -22,6 +24,7 @@ import { appRoutes } from './routes';
     AlbumAppComponent,
     AlbumListComponent,
     AlbumThumbnailComponent,
+    AlbumDetailsComponent,
 
     ProductDescriptionComponent,
     ProductPageComponent,
@@ -35,6 +38,7 @@ import { appRoutes } from './routes';
   ],
   providers: [
     AlbumListService,
+    AlbumDetailsService,
 
     ProductService
   ],
