@@ -12,7 +12,7 @@ export class AlbumDetailsService {
 
   getAlbumList(id: number) {
     return this._httpClient.get(this._albumListUrl)
-    .pipe(map((response) => response.find(list => list.id === id)));
+    .pipe(map((response: any[]) => response.find(list => list.id === id)));
   }
 
 }
