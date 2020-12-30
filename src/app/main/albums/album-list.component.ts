@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlbumListService } from '../common/album-list.service';
+import { List } from '../common/list';
 
 @Component({
   template: `
@@ -12,7 +13,7 @@ import { AlbumListService } from '../common/album-list.service';
   `
 })
 export class AlbumListComponent implements OnInit {
-  albumlist: any;
+  albumlist: List;
   constructor(private _albumListService: AlbumListService) { }
 
   ngOnInit(): void {

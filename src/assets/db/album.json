@@ -5,7 +5,7 @@
   "album": {
     "name": "Eternal",
     "releaseDate": "December 28, 2020",
-    "coverImage": "",
+    "coverImage": "assets/album-photos/eternal.jpg",
     "tracks": [
       {"trackNumber": 1, "trackName": "Memories", "trackPhoto": "assets/album-photos/memories.jpg", "trackLength": "3:42", "trackPrice": 0.99 },
       {"trackNumber": 2, "trackName": "Eternal", "trackPhoto": "assets/album-photos/eternal.jpg", "trackLength": "3:13", "trackPrice": 0.89 },
@@ -20,7 +20,7 @@
     "album": {
       "name": "Stay With Me",
       "releaseDate": "February 9, 2021",
-      "coverImage": "",
+      "coverImage": "assets/album-photos/stay-with-me.jpg",
       "tracks": [
         {"trackNumber": 1, "trackName": "Music City Anthem", "trackPhoto": "assets/album-photos/music-city-anthem.jpg", "trackLength": "2:53", "trackPrice": 0.85 },
         {"trackNumber": 2, "trackName": "Do It again", "trackPhoto": "assets/album-photos/do-it-again.jpg", "trackLength": "5:12", "trackPrice": 0.85 },

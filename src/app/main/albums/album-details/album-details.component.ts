@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlbumDetailsService } from '../specific/album-details.service';
 import { ActivatedRoute } from '@angular/router';
+import { AlbumContainer } from '../specific/album-container';
 
 @Component({
   template: `
@@ -14,7 +15,7 @@ import { ActivatedRoute } from '@angular/router';
   `
 })
 export class AlbumDetailsComponent implements OnInit {
-  list: any;
+  list: AlbumContainer;
 
   constructor(private _albumDetailsService: AlbumDetailsService, private route: ActivatedRoute) { }
 
