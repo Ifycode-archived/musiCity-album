@@ -14,7 +14,10 @@ export class AlbumDetailsService {
 
   getAlbum(id: number): Observable<AlbumContainer> {
     return this._httpClient.get(this._albumUrl)
-    .pipe(map((response: AlbumContainer[]) => response.find(list => list.id === id)));
+    .pipe(map((response: AlbumContainer[]) => response.find(list =>
+      //{
+        list.id === id
+      //console.log(list.id, list.id === id, list);}
+      )));
   }
-
 }
