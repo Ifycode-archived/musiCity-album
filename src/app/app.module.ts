@@ -13,6 +13,7 @@ import { AlbumDetailsService } from './main/albums/specific/album-details.servic
 import { NavBarComponent } from './nav/navbar.component';
 import { appRoutes } from './routes';
 import { Error404Component } from './main/errors/404.component';
+import { AlbumRouteActivator } from './main/albums/album-details/album-router-activator.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { Error404Component } from './main/errors/404.component';
   ],
   providers: [
     AlbumListService,
-    AlbumDetailsService
+    AlbumDetailsService,
+    AlbumRouteActivator
   ],
   bootstrap: [AlbumAppComponent]
 })
